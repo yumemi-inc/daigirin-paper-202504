@@ -1,0 +1,62 @@
+@media print {
+    :root {
+        /* フォントの基本サイズ */
+        font-size: 14px;
+    }
+}
+
+/* マージン */
+@page {
+    margin-top: 10mm;
+    margin-bottom: 10mm;
+}
+
+@page :left {
+    margin-left: 10mm;
+    margin-right: 10mm;
+}
+
+@page :right {
+    margin-left: 10mm;
+    margin-right: 10mm;
+}
+
+/* 改ページ */
+hr.page-break {
+    break-after: page;
+    visibility: hidden;
+}
+
+/* 画像の縁取り */
+img {
+    max-width: 100%;
+    border: 1px solid lightgray;
+}
+
+/* レイアウト */
+.container {
+    display: flex;
+}
+
+/* 書籍紹介 */
+.book .cover {
+    flex: 1;
+    padding: 10px;
+}
+
+.book .detail {
+    flex: 2;
+    padding: 10px;
+}
+
+/* テキスト＋画像 */
+.text-image .text {
+    flex: 1;
+    padding: 10px;
+}
+
+.text-image .image {
+    width: 160px;
+    height: auto;
+    padding: 10px;
+}
