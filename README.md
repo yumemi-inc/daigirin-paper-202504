@@ -23,17 +23,3 @@ PDFの作成と開くを同時に行う。
 ```shell
 yarn start
 ```
-
-### 入稿データの作成
-
-Docker で実行する（推奨）。`output/press.pdf` に出力されます。
-
-```shell
-yarn press
-```
-
-ローカル環境で実行する  （Docker Desktop が無い場合は make press の方が推奨です）
-
-```shell
-yarn press-local
-```
